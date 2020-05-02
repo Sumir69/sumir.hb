@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+    background-color:black;
+}
+.good{
+    color:#0999f4;
+    text-align:center;
+    text-decoration:small-caps ;
+}
+.b{
+    background:linear-gradient(to right, #7f00ff, #e100ff );   
+    font-size:30px;
+    text-shadow:2px 2px 2px #7f00ff;
+    font-weight:bolder ;
+    border-radius:30px;
+    width:100%;
+    height:100px;
+}
+#demo{
+    color:#7f00ff;
+    text-align:center ;
+    text-shadow:2px -1px 2px purple;
+    font-size:60px;
+    font-family:"courier new";
+    font-weight:bold;
+    letter-spacing:10px;
+    
+}
+.k{
+    color:#cf25be;
+    text-align:center;
+    font-size:30px;
+    text-shadow:2px 3px 4px #7f00ff;
+    border:dashed  ;
+    font-weight:bold ;
+    border-radius:20px;
+}
+#f{
+    color:wite;
+}
+.c{
+    background:linear-gradient(to right, #7f00ff, #e100ff );   
+    font-size:30px;
+    text-shadow:2px 2px 2px #7f00ff;
+    font-weight:bolder ;
+    border-radius:30px;
+    width:100%;
+    height:100px;
+}
+#f{
+    color:#7f00ff;
+    text-align:center ;
+    text-shadow:2px -1px 2px purple;
+    font-size:60px;
+    font-family:"courier new";
+    font-weight:bold;
+    letter-spacing:10px;
+    
+}
+.i{
+    background-color:#000;
+    color: #ee63ec;
+    border-color:#fff;
+    height:20px;
+    font-weight:bolder;
+}
+        </style>
+        <title>Page Title</title>
+    </head>
+    <body>
+    <div class="good">
+        <h1>Dedicated to my One and only MAUSAGI</h1>
+    </div>
+    <div class ="k">
+    Type Your Name:<input class="i"placeholder="Rahul?" id="field1" type="text">
+    </div>
+    
+        <br />
+        <br />
+        
+        <button class="c"onclick="myFunctin()">Click! Click!</button>
+        <hr>
+        <button class="b" onclick="myFunction()">Click this if Today is ur birthday</button>
+        
+        <p id="demo"></p>
+        
+
+<p id="f"></p>
+
+
+<script>
+    function myFunctin() {
+document.getElementById("f").innerHTML = document.getElementById("field1").value  }
+function myFunction(){
+    document .getElementById("demo").innerHTML ="happy birthday🎂🎂🍰🥳🎈🎉",document.getElementById("field1").value 
+}
+</script>
+
+    </body>
+</html>
