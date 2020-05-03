@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hb-Sumir-Project</title>
+        <style>
+            /* Created by Sumir >.< */
+
+body {
+    background-color:black;
+}
+.good{
+    color:#0999f4;
+    text-align:center;
+    font-variant: small-caps ;
+    text-shadow:3px 3px 3px purple;
+    border:dashed;
+    border-radius:30px;
+}
+.b{
+    background:linear-gradient(to right, #7f00ff, #e100ff );   
+    font-size:30px;
+    text-shadow:2px 2px 2px #7f00ff;
+    font-weight:bolder ;
+    border-radius:30px;
+    width:100%;
+    height:100px;
+}
+#demo{
+    color:#7f00ff;
+    text-align:center ;
+    text-shadow:2px -1px 2px pink;
+    font-size:60px;
+    font-family:"courier new";
+    font-weight:bold;
+    letter-spacing:10px;
+    
+}
+.k{
+    color:#cf25be;
+    text-align:center;
+    font-size:30px;
+    text-shadow:2px 3px 4px #7f00ff;
+    border:dashed  ;
+    font-weight:bold ;
+    border-radius:20px;
+}
+.c{
+    background:linear-gradient(to right, #7f00ff, #e100ff );   
+    font-size:30px;
+    text-shadow:2px 2px 2px #7f00ff;
+    font-weight:bolder ;
+    border-radius:30px;
+    width:100%;
+    height:100px;
+}
+#f{
+    color:#7f00ff;
+    text-align:center ;
+    text-shadow:2px -1px 2px purple;
+    font-size:40px;
+    font-family:arial;
+    font-weight:bold;
+    letter-spacing:10px;
+    
+}
+.i{
+    background-color:#000;
+    color: #ee63ec;
+    border-color:#fff;
+    height:20px;
+    font-weight:bolder;
+}
+    input {
+      width: 50%;
+      height: 30px;
+    }
+
+    div.bl {
+      height: 15px;
+      width: 80%;
+      background-color: purple;
+      margin: 15px auto;
+      border-radius: 8px;
+
+    }
+
+    span {
+      height: 15px;
+      width: 100%;
+      background-color: #7f00ff;
+      display: block;
+      border-radius: 8px;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+      transform-origin: left;
+      border-color: white;
+    }
+    #age{
+        text-align:center ;
+        background-color:#000;
+    color: #ee63ec;
+    border-color:#fff;
+    height:20px;
+    font-weight:bolder;
+    }
+.ok{
+    border:dashed;
+    border-color:#cf25be ;
+    border-radius:30px;
+    color:#cf25be;
+    font-weight:bolder;
+    font-size:30px;
+    text-align:center;
+    text-shadow:2px 3px 4px #7f00ff;
+}
+.v{
+color: #0999f4;
+text-align:left;
+text-shadow:none;
+font-weight:bold;
+}
+.ass{
+color:grey;
+font-size:10px;
+}
+
+        </style>
+    </head>
+    <body>
+    <div class="good">
+        <h1>Dedicated to my One and only MAUSAGI</h1>
+        <p class="v">Steps/guide-:<br/> ✓. Read the guide fully<br/>✓. Enter your name<br/>✓.Click the button and see the magic<br/>✓.Scroll down and enter your age<br/>✓.See your progress in the "Game of life"</p>
+    </div>
+        <br/>
+        <br/>
+    <div class ="k">
+    Type Your Name:<input class="i" autofocus placeholder="Rahul?" id="field1" type="text"><br/>
+    <br />
+    
+    </div>
+    
+        <br />
+        <br />
+        
+        
+        
+        <button class="b" onclick="myFunction()">Click! Click!</button>
+        
+        <p id="demo"></p>
+        
+
+<div class="ok">
+<p>Type Your age:</p>
+
+<input placeholder="Age?"id="age" type="number" autofocus />
+    <div class="bl">
+      <span></span>
+    </div>
+  </body>
+  <script>
+      // Created by Sumir >.<
+
+
+function myFunction(){
+    document .getElementById("demo").innerHTML ="happy birthday🎂🎂🍰🥳🎈🎉"+document.getElementById("field1").value + " MausaJi";
+ }
+function myFunctn(){
+    document.getElementById("f").innerHTML = document.getElementById("age").value + ",nice you have reached to this level, may u keep rocking in the infine future, once again Happy Birthday"
+}
+    const age = document.getElementById("age");
+
+    age.addEventListener("input", function () {
+      document.querySelector("span").style.transform = `scaleX(${
+        age.value / 100
+      })`;
+    });
+  </script>
+  <button class="b" onclick="myFunctn()" >Tap to see progress in the game of life</button>
+  <p id="f"></p>
+
+    </div>
+    <br/>
+    <hr>
+    <div class="ass">
+        <p>©Sumir Seth <br/>Use content with proper credits.
+    </div>
+
+    </body>
+</html>
